@@ -90,3 +90,20 @@ ul {
 .reference img {
     border-radius: 50%;
 }
+/* Hover effects */
+.project:hover,
+.reference:hover {
+    background-color: #f1f2ff;
+}
+
+.project img:hover {
+    border-color: #5d66d2;
+}
+
+li:hover {
+    color: #5d66d2;
+}
+
+a:hover {
+    opacity: 0.8;
+}
