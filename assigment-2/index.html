@@ -11,13 +11,12 @@
 </head>
 <body>
 
-  <header class="border-bottom">
-    <nav class="navbar">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
-
+  <header>
+    <nav class="navbar navbar-expand">
+      <div class="container header-inner">
         <a class="navbar-brand logo" href="index.html">NIKE</a>
 
-        <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3 order-3 order-md-2 w-100 w-md-auto">
+        <ul class="navbar-nav menu">
           <li class="nav-item"><a class="nav-link" href="index.html">New</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html">Men</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html">Women</a></li>
@@ -25,103 +24,100 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Sale</a></li>
         </ul>
 
-        <a class="nav-link order-2 order-md-3" href="#" aria-label="Cart">
-          <i class="bi bi-cart fs-3"></i>
-        </a>
-
+        <a class="cart" href="#" aria-label="Cart"><i class="bi bi-cart"></i></a>
       </div>
     </nav>
   </header>
 
-  <main class="container my-4">
-    <h2 class="mb-4">Featured Shoes</h2>
+  <main class="container page">
+    <h2>Featured Shoes</h2>
 
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Max+90" class="card-img-top" alt="Nike Air Max 90"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Air Max 90</h5>
-            <p class="card-text">$130</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Max+90" alt="Nike Air Max 90"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Air Max 90</h5>
+            <p class="product-price">$130</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Force+1" class="card-img-top" alt="Nike Air Force 1"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Air Force 1</h5>
-            <p class="card-text">$115</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Force+1" alt="Nike Air Force 1"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Air Force 1</h5>
+            <p class="product-price">$115</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Pegasus+41" class="card-img-top" alt="Nike Pegasus 41"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Pegasus 41</h5>
-            <p class="card-text">$140</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Pegasus+41" alt="Nike Pegasus 41"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Pegasus 41</h5>
+            <p class="product-price">$140</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Dunk+Low" class="card-img-top" alt="Nike Dunk Low"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Dunk Low</h5>
-            <p class="card-text">$120</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Dunk+Low" alt="Nike Dunk Low"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Dunk Low</h5>
+            <p class="product-price">$120</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Vomero+17" class="card-img-top" alt="Nike Vomero 17"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Vomero 17</h5>
-            <p class="card-text">$160</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Vomero+17" alt="Nike Vomero 17"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Vomero 17</h5>
+            <p class="product-price">$160</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Blazer+Mid" class="card-img-top" alt="Nike Blazer Mid"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Blazer Mid '77</h5>
-            <p class="card-text">$105</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Blazer+Mid" alt="Nike Blazer Mid"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Blazer Mid '77</h5>
+            <p class="product-price">$105</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Invincible+3" class="card-img-top" alt="Nike Invincible 3"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Nike Invincible 3</h5>
-            <p class="card-text">$180</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Invincible+3" alt="Nike Invincible 3"></a>
+          <div class="product-info">
+            <h5 class="product-name">Nike Invincible 3</h5>
+            <p class="product-price">$180</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Jordan+1" class="card-img-top" alt="Air Jordan 1"></a>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Air Jordan 1 Low</h5>
-            <p class="card-text">$125</p>
-            <a href="#" class="btn btn-dark mt-auto">Add to Cart</a>
+        <div class="product-card">
+          <a href="product.html"><img src="https://placehold.co/400x400/f5f5f5/111?text=Air+Jordan+1" alt="Air Jordan 1"></a>
+          <div class="product-info">
+            <h5 class="product-name">Air Jordan 1 Low</h5>
+            <p class="product-price">$125</p>
+            <a href="#" class="button">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -129,13 +125,13 @@
     </div>
   </main>
 
-  <footer class="site-footer mt-5 py-4">
+  <footer class="site-footer">
     <div class="container">
       <div class="row">
 
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3">
           <h6>Shop</h6>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="index.html">New</a></li>
             <li><a href="index.html">Men</a></li>
             <li><a href="index.html">Women</a></li>
@@ -143,9 +139,9 @@
           </ul>
         </div>
 
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3">
           <h6>Help</h6>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="#">Order Status</a></li>
             <li><a href="#">Shipping</a></li>
             <li><a href="#">Returns</a></li>
@@ -153,18 +149,18 @@
           </ul>
         </div>
 
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3">
           <h6>About</h6>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="#">About Nike</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Sustainability</a></li>
           </ul>
         </div>
 
-        <div class="col-6 col-md-3 mb-3">
+        <div class="col-6 col-md-3">
           <h6>Follow</h6>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">YouTube</a></li>
@@ -172,7 +168,7 @@
         </div>
 
       </div>
-      <p class="text-center small mb-0 pt-3 footer-bottom">&copy; 2026 Nike Clone. Student project.</p>
+      <p class="footer-bottom">&copy; 2026 Nike Clone. Student project.</p>
     </div>
   </footer>
 
