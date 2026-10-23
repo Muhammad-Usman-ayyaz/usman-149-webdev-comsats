@@ -12,7 +12,7 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-.header-inner {
+.navbar .header-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
