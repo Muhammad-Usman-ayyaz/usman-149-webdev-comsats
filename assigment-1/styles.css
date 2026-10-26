@@ -14,7 +14,8 @@ body {
 .resume {
     max-width: 800px;
     margin: 20px auto;
-    padding: 30px;
+    margin-top: 0px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -24,8 +25,7 @@ nav {
     gap: 15px;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #f1f2ff;
-    border: 1px solid #ccc;
+
     justify-content: center;
 
 }
