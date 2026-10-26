@@ -19,22 +19,7 @@ body {
     background-color: white;
 }
 
-nav {
-    margin-top: 0px;
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
 
-    justify-content: center;
-
-}
-
-nav a {
-    color: #5d66d2;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 header {
     display: flex;
