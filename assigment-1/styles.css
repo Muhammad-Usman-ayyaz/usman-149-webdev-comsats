@@ -18,6 +18,23 @@ body {
     background-color: white;
 }
 
+nav {
+    margin-top: 0px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f1f2ff;
+    border: 1px solid #ccc;
+    justify-content: center;
+
+}
+
+nav a {
+    color: #5d66d2;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 header {
     display: flex;
@@ -38,19 +55,7 @@ header img {
     font-size: 18px;
 }
 
-nav {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #f1f2ff;
-}
 
-nav a {
-    color: #5d66d2;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 section {
     margin-bottom: 20px;
