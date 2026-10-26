@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="cvadvancecss.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="resume">
+    <main class="resume">
 
         <header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
             <img src="p2.jpg" alt="Muhammad Usman" width="150px" height="150px">
             <div>
                 <h1>Muhammad Usman</h1>
@@ -22,15 +28,15 @@
             </div>
         </header>
 
-        <section>
-            <h2>Professional Summary</h2>
+        <section id="about">
+            <h2>About me</h2>
             <p>Second-year BSCS student at COMSATS University Lahore with a strong academic record and a merit
                 scholarship. Passionate about software engineering, specializing in Natural Language Processing
                 (NLP) architectures and Relational Database Management Systems (RDBMS). Actively building practical
                 experience through full-stack development and complex algorithmic projects.</p>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <h3>Frontend &amp; Backend</h3>
             <ul>
@@ -50,10 +56,10 @@
             </ul>
         </section>
 
-        <section>
+        <section id="experience">
             <h2>Work Experience</h2>
 
-            <div class="job">
+            <article class="job">
                 <h3>Full Stack Developer (Internship)</h3>
                 <p class="company">Codeinity Solutions | Jun 2026 - Present</p>
                 <ul>
@@ -61,9 +67,9 @@
                     <li>Developing scalable full-stack applications with robust architectural design.</li>
                     <li>Integrating Artificial Intelligence tools and NLP models into modern web environments.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
                 <h3>Nano Fibers Research Intern</h3>
                 <p class="company">LUMS | Early 2024 - May 2024</p>
                 <ul>
@@ -74,9 +80,9 @@
                     <li>Gained hands-on experience with advanced laboratory equipment and structured research
                         methodologies.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="job">
+            <article class="job">
                 <h3>HR Intern</h3>
                 <p class="company">Shaukat Khanum | May 2024 - Aug 2024</p>
                 <ul>
@@ -84,57 +90,63 @@
                     <li>Supported personnel management and streamlined communication frameworks.</li>
                     <li>Developed a strong understanding of organizational behavior and professional ethics.</li>
                 </ul>
-            </div>
+            </article>
         </section>
 
-        <section>
+        <section id="education">
             <h2>Education</h2>
-            <h3>BS Computer Science</h3>
-            <p>COMSATS University Lahore | 2024-2028</p>
-            <h3>A-levels</h3>
-            <p>Lahore College of Arts &amp; Sciences | 2022-2024</p>
+            <ul>
+                <li>
+                    <h3>BS Computer Science</h3>
+                    <p>COMSATS University Lahore | 2024-2028</p>
+                </li>
+                <li>
+                    <h3>A-levels</h3>
+                    <p>Lahore College of Arts &amp; Sciences | 2022-2024</p>
+                </li>
+            </ul>
+
+
         </section>
+        <h2>Featured Projects</h2>
 
-        <section>
-            <h2>Featured Projects</h2>
-
-            <div class="project">
-                <a href="https://usmanjsonplaceholder.vercel.app/" target="_blank">
-                    <img src="image.png" alt="JSON Placeholder Card" width="200">
-                </a>
-                <div>
-                    <h3>JSON Placeholder Card</h3>
-                    <p>A simple card interface which allows you to get JSON. It shows the users, their posts and
-                        likes.</p>
-                    <p><b>Tech:</b> JSON, API</p>
-                </div>
+        <article class="project">
+            <a href="https://usmanjsonplaceholder.vercel.app/" target="_blank">
+                <img src="image.png" alt="JSON Placeholder Card" width="200">
+            </a>
+            <div>
+                <h3>JSON Placeholder Card</h3>
+                <p>A simple card interface which allows you to get JSON. It shows the users, their posts and
+                    likes.</p>
+                <p><b>Tech:</b> JSON, API</p>
             </div>
+        </article>
 
-            <div class="project">
-                <a href="https://usmangithubprofilefinder.vercel.app/" target="_blank">
-                    <img src="github.png" alt="GitHub Profile Finder" width="200">
-                </a>
-                <div>
-                    <h3>GitHub Profile Finder</h3>
-                    <p>A website to find GitHub profiles. It can be used to find each profile's top repos.</p>
-                    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
-                </div>
+        <article class="project">
+            <a href="https://usmangithubprofilefinder.vercel.app/" target="_blank">
+                <img src="github.png" alt="GitHub Profile Finder" width="200">
+            </a>
+            <div>
+                <h3>GitHub Profile Finder</h3>
+                <p>A website to find GitHub profiles. It can be used to find each profile's top repos.</p>
+                <p><b>Tech:</b> HTML, CSS, JavaScript</p>
             </div>
+        </article>
 
-            <div class="project">
-                <a href="https://usmanweather.vercel.app/" target="_blank">
-                    <img src="weatherapp.png" alt="Weather App" width="200">
-                </a>
-                <div>
-                    <h3>Weather App</h3>
-                    <p>A complete weather app that fetches real-time data from the OpenWeatherMap API and changes
-                        the background based on the current weather.</p>
-                    <p><b>Tech:</b> HTML, CSS, JavaScript, OpenWeatherMap API</p>
-                </div>
+        <article class="project">
+            <a href="https://usmanweather.vercel.app/" target="_blank">
+                <img src="weatherapp.png" alt="Weather App" width="200">
+            </a>
+            <div>
+                <h3>Weather App</h3>
+                <p>A complete weather app that fetches real-time data from the OpenWeatherMap API and changes
+                    the background based on the current weather.</p>
+                <p><b>Tech:</b> HTML, CSS, JavaScript, OpenWeatherMap API</p>
             </div>
-        </section>
+        </article>
 
-        <section>
+
+        <section id="achievements">
             <h2>Achievements</h2>
             <ul>
                 <li><b>Merit Scholarship</b> - COMSATS University Lahore</li>
@@ -143,7 +155,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="languages">
             <h2>Languages</h2>
             <ul>
                 <li>Urdu - Native</li>
@@ -152,7 +164,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="references">
             <h2>References</h2>
             <div class="reference">
                 <img src="p2.jpg" alt="Ayyaz Muhammad" width="80" height="80">
@@ -164,8 +176,18 @@
                 <p><b>Haseeb Ahmed</b><br>CTO, SoftLogics (Pvt.) Ltd<br>haseeb@softlog.com<br>+92 300 9876543</p>
             </div>
         </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="mailto:usmanayyazali@gmail.com">usmanayyazali@gmail.com</a></li>
+                <li><a href="https://github.com/Muhammad-Usman-ayyaz" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
 
-    </div>
+    </main>
+    <footer>
+        <p>© 2026 Muhammad Usman</p>
+    </footer>
 </body>
 
 </html>

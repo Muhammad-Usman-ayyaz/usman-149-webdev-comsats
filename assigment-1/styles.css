@@ -18,7 +18,7 @@ body {
     background-color: white;
 }
 
-/* Header */
+
 header {
     display: flex;
     gap: 20px;
@@ -38,7 +38,20 @@ header img {
     font-size: 18px;
 }
 
-/* Section headings */
+nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f1f2ff;
+}
+
+nav a {
+    color: #5d66d2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 section {
     margin-bottom: 20px;
 }
@@ -59,7 +72,7 @@ ul {
     margin-left: 20px;
 }
 
-/* Experience */
+
 .job {
     margin-bottom: 15px;
 }
@@ -69,7 +82,7 @@ ul {
     font-style: italic;
 }
 
-/* Projects */
+
 .project {
     display: flex;
     gap: 15px;
@@ -80,17 +93,22 @@ ul {
     border: 1px solid #ccc;
 }
 
-/* References */
+
 .reference {
     display: flex;
-    gap: 15px;
+    gap: 30px;
     margin-bottom: 10px;
 }
 
 .reference img {
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 100px;
+    padding: 2px;
     border-radius: 50%;
 }
-/* Hover effects */
+
+
 .project:hover,
 .reference:hover {
     background-color: #f1f2ff;
