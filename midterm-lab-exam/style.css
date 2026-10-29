@@ -165,6 +165,7 @@ header {
   padding-top: 16px;
 }
 
+/* task 1: mega menu (below BP: accordion) */
 .mega-panel {
   display: none;
 }
@@ -202,22 +203,18 @@ fieldset {
   display: grid;
   gap: 6px;
   padding: 0;
-  /* was 16px */
   border: none;
-  /* was 1px solid #ddd */
   min-width: 0;
 }
 
 legend {
   float: none;
   width: 100%;
-
   padding: 0 0 4px;
   margin: 0 0 10px;
   font-size: 1.1rem;
   font-weight: 700;
   border-bottom: 2px solid hsl(343, 70%, 45%);
-
 }
 
 fieldset label {
@@ -350,6 +347,7 @@ select:user-invalid+.msg {
     color: hsl(343, 70%, 45%);
   }
 
+  /* task 2: checkout form (BP and wider: 2 fieldsets, labels on the left) */
   .fields {
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -367,7 +365,7 @@ select:user-invalid+.msg {
   }
 }
 
-
+/* product page */
 .pic {
   display: block;
   width: 100%;
@@ -383,4 +381,85 @@ select:user-invalid+.msg {
   width: 70px;
   padding: 6px;
   margin: 0 0 16px;
+}
+
+/* task 3: cart badge and mini cart */
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+#cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background-color: hsl(343, 70%, 45%);
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 18px;
+  text-align: center;
+}
+
+.mini-cart-wrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.mini-cart {
+  pointer-events: auto;
+  width: 320px;
+  max-width: 100%;
+  margin-left: auto;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mini-cart h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.mini-cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mini-cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mini-cart .remove {
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.mini-cart .cart-total {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.mini-cart .btn {
+  text-align: center;
+}
+
+.btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
 }

@@ -111,7 +111,19 @@
         </ul>
 
         <label for="menu-toggle" class="burger" aria-label="Menu"><i class="bi bi-list"></i></label>
-        <a class="cart" href="checkout.html" aria-label="Cart"><i class="bi bi-cart"></i></a>
+        <a class="cart" href="checkout.html" aria-label="Cart">
+          <span class="cart-icon"><i class="bi bi-cart"></i><span id="cart-count">0</span></span>
+        </a>
+      </div>
+
+      <div class="mini-cart-wrap container">
+        <div class="mini-cart" id="mini-cart" hidden>
+          <h3>Your Cart</h3>
+          <p id="cart-empty">Your cart is empty.</p>
+          <ul id="cart-list"></ul>
+          <p class="cart-total">Total: <span id="cart-total">$0</span></p>
+          <a class="btn" href="checkout.html">Checkout</a>
+        </div>
       </div>
     </nav>
   </header>
@@ -268,6 +280,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
