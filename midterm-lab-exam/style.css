@@ -165,7 +165,6 @@ header {
   padding-top: 16px;
 }
 
-/* task 1: mega menu (below BP: accordion) */
 .mega-panel {
   display: none;
 }
@@ -190,6 +189,64 @@ header {
   display: block;
   padding: 6px 0;
   color: #707072;
+}
+
+/* task 2: checkout form (below BP: one column) */
+.fields {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+fieldset {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  /* was 16px */
+  border: none;
+  /* was 1px solid #ddd */
+  min-width: 0;
+}
+
+legend {
+  float: none;
+  width: 100%;
+
+  padding: 0 0 4px;
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-bottom: 2px solid hsl(343, 70%, 45%);
+
+}
+
+fieldset label {
+  font-weight: 500;
+}
+
+fieldset input,
+fieldset select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.msg {
+  display: none;
+  color: #d00000;
+  font-size: 0.85rem;
+}
+
+input:user-invalid,
+select:user-invalid {
+  border: 2px solid #d00000;
+}
+
+input:user-invalid+.msg,
+select:user-invalid+.msg {
+  display: block;
 }
 
 @media (min-width: 649px) {
@@ -292,9 +349,25 @@ header {
   .mega-col a:hover {
     color: hsl(343, 70%, 45%);
   }
+
+  .fields {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  fieldset {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 10px;
+  }
+
+  .msg {
+    grid-column: 2;
+  }
 }
 
-/* product page */
+
 .pic {
   display: block;
   width: 100%;
